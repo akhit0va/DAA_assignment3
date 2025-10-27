@@ -1,0 +1,8 @@
+Defense Cheat-Sheet (short)
+1) Problem: connect all districts with min total cost → MST.
+2) Data: JSON (nodes, edges, weights). I validate sizes (V, E) before run.
+3) Algorithms: Prim (PQ on adjacency), Kruskal (sort edges + DSU).
+4) Complexity: Prim ~ O(E log V), Kruskal ~ O(E log E).
+5) Why both give same total cost? MST is unique in weight sum (not necessarily in structure) for a connected graph.
+6) When to choose: Prim (dense/adj list, repeated runs), Kruskal (edge list, forests, easy DSU).
+7) Results: equal costs across graphs; minor differences in ops/time due to data shape.
